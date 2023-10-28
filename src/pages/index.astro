@@ -117,7 +117,8 @@ import Layout from "../layouts/Layout.astro";
 	});
 
 	$("#file").onchange = (e) => {
-		$("#file").files.forEach((file) => {
+		const [...files] = $("#file").files;
+		files.forEach((file) => {
 			if (file) {
 				const img = document.createElement("img");
 				img.src = URL.createObjectURL(file);
