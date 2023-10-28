@@ -117,12 +117,13 @@ import Layout from "../layouts/Layout.astro";
 	});
 
 	$("#file").onchange = (e) => {
-		const [file] = $("#file").files;
-		if (file) {
-			const img = document.createElement("img");
-			img.src = URL.createObjectURL(file);
-			img.className = "screenshot w-18 object-contain rounded-md";
-			document.getElementById("scroll-images").appendChild(img);
-		}
+		$("#file").files.forEach((file) => {
+			if (file) {
+				const img = document.createElement("img");
+				img.src = URL.createObjectURL(file);
+				img.className = "screenshot w-18 object-contain rounded-md";
+				document.getElementById("scroll-images").appendChild(img);
+			}
+		});
 	};
 </script>
