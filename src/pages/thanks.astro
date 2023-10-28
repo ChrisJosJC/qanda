@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Q&A | Thanks for use us!">
+    <main class="grid md:grid-cols-2 p-2 mt-2">
+        <div
+            class="max-sm:absolute max-sm:top-0 max-sm:-z-20 max-sm:opacity-60"
+        >
+            <img
+                src="favicon.png"
+                alt="Logo"
+                class="fixed top-2 left-4 max-w-[100px]"
+            />
+            <img src="character.png" class="h-screen w-full object-contain" />
+        </div>
+        <div class="grid place-items-center max-sm:h-screen">
+            <div
+                class="bg-white m-10 p-4 max-h-4/5 w-3/5 rounded-lg
+			before:absolute before:-top-10 before:right-0 before:w-32 before:h-40 before:bg-violeta/30 before:-z-10 before:rounded-md after:absolute after:-bottom-4 after:left-[50%] after:w-[45%] after:h-40 after:bg-violeta/30 after:-z-10 after:rounded-md max-sm:m-6 max-sm:w-4/5 max-sm:h-3/4"
+            >
+                <div
+                    class="absolute top-0 left-[10%] w-[40%] h-40 bg-violeta/30 -z-10 rounded-md"
+                >
+                </div>
+                <h1 class="text-lg text-center font-bold">
+                    Nunca pares de preguntar
+                </h1>
+                <span class="text-xs opacity-60 text-center block mb-2"
+                    >Tu duda ha sido enviada con exito</span
+                >
+                <video
+                    src="/like.mp4"
+                    loop
+                    muted
+                    autoplay
+                    class="rounded-md w-full"></video>
+                <a
+                    href="/"
+                    class="h-10 items-center justify-center text-lg opacity-100 bg-naranja w-full mt-2 rounded-lg font-black text-white cursor-pointer hover:scale-95 hover:opacity-90 transition-transform flex"
+                    >Volver a atras</a
+                >
+            </div>
+        </div>
+    </main>
+</Layout>
